@@ -1,0 +1,299 @@
+*{
+    list-style:none;
+}
+html {
+    height:100%;
+}
+body {
+    display:block;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    background: #fff;
+}
+.main-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+}
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+figure{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    padding: 8px 2px 6px 6px;
+    height:60px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    
+}
+
+
+header nav .nav-right-section {
+    width: 235px;
+    height: 48px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 0 0 4px;
+}
+header nav .nav-right-section .gmail-images{
+    display: flex;
+    line-height: normal;
+    padding-right: 15px;
+    margin-bottom: 4px;
+}
+    .gmail-images li{
+        display: flex;
+        line-height: normal;
+        padding-left: 15px;
+    }
+    .gmail-images li a:visited{
+        color: #222;
+    }
+.menu-icon-container{
+    display: flex;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('../img/nine-points.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin: 13px;
+}
+    .menu-icon:hover {
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+        background-color: rgba(60,64,67,0.08);
+        box-shadow: 0px 0px 0px 8px rgba(60,64,67,0.08);
+    }
+
+nav .nav-right-section img {
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+}
+
+nav .nav-right-section .menu-icon-container li img:hover{
+    cursor: pointer;
+    background-color: rgba(60,64,67,0.08);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+main .main-logo{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 314px);
+
+}
+    main .main-logo figure {
+        max-height: 92px;
+        height: 100%;
+        margin-top: auto;
+    }
+        main .main-logo figure img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            width: auto;
+            height: 92px;
+        }
+
+
+.main-search{
+    padding: 20px;
+    max-height: 160px;
+    box-sizing: border-box;
+}
+
+main .main-input {
+    width: auto;
+    max-width: 584px;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+main .main-input-container {
+    width: auto;
+    max-width: 584px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        main .main-input-container:hover {
+            background-color: #fff;
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: rgba(223,225,229,0);
+        }
+
+main .main-input input {
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0 0 0 ;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+    width: 487px;
+    height: 34px;
+}
+main .main-input-container .search-icon {
+    background-image: url('../img/icon-search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    padding-right: 13px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+main .main-input .mic-icon {
+    background-image: url('../img/mic-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 8px;
+    margin-left: 6px;
+    margin-right: 8px;
+}
+main .main-buttons {
+    display: flex;
+    width: 584px;
+    height: 70px;
+    padding-top: 18px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 0;
+}
+main .main-buttons .buttons-search {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    color: #3c4043;
+    cursor: pointer;
+    user-select: none;
+}
+main .main-buttons .buttons-search:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+main .main-buttons .buttons-search:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+.blank{
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 52px;
+}
+
+.footer {
+    display: block;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    /* justify-content: space-between;
+    list-style: none;
+    text-decoration: none; */
+}
+
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 1200px){
+    footer .footer-container {
+        justify-content: space-evenly;
+    }
+}
+
+footer .footer-container .footer-left{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+    footer .footer-container .footer-left li a {
+        color: #70757a;
+        display: block;
+        padding: 15px;
+    }
+
+footer .footer-container .footer-right{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+    footer .footer-container .footer-right li a {
+        color: #70757a;
+        display: block;
+        padding: 15px;
+    }
+
