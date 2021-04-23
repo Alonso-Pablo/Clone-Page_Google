@@ -20,7 +20,7 @@ luckyGoogle.addEventListener("click", () => {
 
 // Event: Enter
 window.addEventListener("keydown", (event) => {
-    if (textInput.value != "" || textInput.value != " ") {
+    if (textInput.value != "" && textInput.value != " ") {
         if (event.key === "Enter") window.location.href = `https://www.google.com/search?q=${textInput.value}`;      
     };
   },false);
