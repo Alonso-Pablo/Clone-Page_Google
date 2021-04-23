@@ -22,6 +22,5 @@ luckyGoogle.addEventListener("click", () => {
 window.addEventListener("keydown", (event) => {
     if (textInput.value != "" || textInput.value != " ") {
         if (event.key === "Enter") window.location.href = `https://www.google.com/search?q=${textInput.value}`;      
-    } else { console.log(textInput.value)}
-    console.log(event.key);
+    };
   },false);
